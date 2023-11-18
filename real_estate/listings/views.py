@@ -38,7 +38,6 @@ def listing_update(request, pk):
     form = ListingForm(instance=listing)
     if request.method == "POST":
         form = ListingForm(request.POST)
-        print(request.POST)
         if form.is_valid():
             form.save()
         return redirect("/")
@@ -46,6 +45,11 @@ def listing_update(request, pk):
         "form":form
     }
     return render(request, "listing_update.html", context)
+
+def listing_delete(request, pk):
+    listing = Listing.objects.get(id=pk)
+    listing.delete()
+    return redirect("/")
 
 
 
