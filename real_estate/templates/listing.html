@@ -1,5 +1,175 @@
-{{ listing.title }}
+{% extends "base.html" %}
 
-${{ listing.price }}
+{% block content %}
 
-{{ listing.address }}
+    <div class="px-3 py-2 bg-gray-100 rounded-sm">
+        <h3 class="text-5xl text-gray-900">{{ listing.title }}</h3>      
+            <div class="property-info__address-actions">
+                <h1 class="property-info-address">{{ listing.address }}</h1>
+                <div class="property-info__actions">
+                    <button aria-label="Share listing" title="Share listing" class="ButtonBase-sc-18zziu4-0 iqtDgx View__StyledButton-sc-1qrbl44-0 iQmAu share-listing__button property-info__action">     
+                        <svg class="CK__Icon--large w-8 h-8 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15m0-3l-3-3m0 0l-3 3m3-3V15" />
+                        </svg>
+                    </button>
+                    <button class="ButtonBase-sc-18zziu4-0 iqtDgx View__ListingBookmarkStarButton-sc-1u8laab-1 dIWFbC listing-bookmark listing-bookmark--details property-info__action" title="Save property">
+                    <svg class="CK__Icon--large w-8 h-8 " aria-label="Save property" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                        <use href="#ck-sprite-star"></use>
+                    </svg>
+                    </button>
+                </div>
+            </div>       
+        <img src="{{ listing.image.url }}" alt=""/>
+        <p class="mt-3 text-4xl text-gray-900">${{ listing.price }}</p>
+        <p class="text-gray-600 text-2xl">{{ listing.address }}</p>
+        <div class="card bg-neutral h-18 hover:bg-primary">
+            <div class="flex justify-between absolute">      
+                <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                     xmlns:cc="http://creativecommons.org/ns#"
+                     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                     xmlns:svg="http://www.w3.org/2000/svg"
+                     xmlns="http://www.w3.org/2000/svg"
+                     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                     width="9mm"
+                     height="16mm"
+                     viewBox="0 0 210 168.99999"
+                     version="1.1"
+                     id="svg8"
+                     inkscape:version="0.92.0 r15299"
+                     sodipodi:docname="Bed.svg">
+                     <defs
+                    id="defs2" />
+                     <sodipodi:namedview
+                    id="base"
+                    pagecolor="#ffffff"
+                    bordercolor="#666666"
+                    borderopacity="1.0"
+                    inkscape:pageopacity="0.0"
+                    inkscape:pageshadow="2"
+                    inkscape:zoom="0.35"
+                    inkscape:cx="571.86892"
+                    inkscape:cy="519.511"
+                    inkscape:document-units="mm"
+                    inkscape:current-layer="layer1"
+                    showgrid="false"
+                    inkscape:snap-global="false"
+                    showborder="true"
+                    inkscape:window-width="1360"
+                    inkscape:window-height="705"
+                    inkscape:window-x="-8"
+                    inkscape:window-y="-8"
+                    inkscape:window-maximized="1"
+                    borderlayer="false"
+                    scale-x="1"
+                    inkscape:showpageshadow="false" />
+                     <metadata
+                    id="metadata5">
+                    <rdf:RDF>
+                    <cc:Work
+                        rdf:about="">
+                        <dc:format>image/svg+xml</dc:format>
+                        <dc:type
+                        rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                        <dc:title></dc:title>
+                    </cc:Work>
+                    </rdf:RDF>
+                     </metadata>
+                     <g
+                    inkscape:label="Layer 1"
+                    inkscape:groupmode="layer"
+                    id="layer1"
+                    transform="translate(0,-128)">
+                    <path
+                    style="opacity:1;fill:none;fill-opacity:0.54871796;fill-rule:nonzero;stroke:#000000;stroke-width:8.08300018;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:403.79205322;stroke-opacity:1;paint-order:stroke fill markers"
+                    d="m 4.073691,246.53545 v 46.133 H 25.19814 v -11.89733 c 0,-7.06153 5.683538,-12.74786 12.745077,-12.74786 H 172.06651 c 7.06147,0 12.74508,5.68633 12.74508,12.74786 v 11.89733 h 21.1216 v -46.133 z"
+                    id="rect4496"
+                    inkscape:connector-curvature="0" />
+                    <path
+                    style="opacity:1;fill:none;fill-opacity:0.54871796;fill-rule:nonzero;stroke:#000000;stroke-width:8.08300018;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:403.79205322;stroke-opacity:1;paint-order:stroke fill markers"
+                    d="m 58.642342,183.53394 c -30.230667,0 -54.568651,24.33517 -54.568651,54.56581 0,2.87075 -0.1455273,5.68704 0.2775908,8.4357 H 205.67446 c 0.42295,-2.74866 0.25889,-5.56495 0.25889,-8.4357 0,-30.23064 -24.33516,-54.56581 -54.56586,-54.56581 z"
+                    id="path4508"
+                    inkscape:connector-curvature="0"
+                    sodipodi:nodetypes="ssccsss" />
+                    <path
+                    style="opacity:1;fill:none;fill-opacity:0.54871796;fill-rule:nonzero;stroke:#000000;stroke-width:8.08300018;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:403.79205322;stroke-opacity:1;paint-order:stroke fill markers"
+                    d="m 22.482677,132.56487 c -4.842181,0 -8.739887,3.89772 -8.739887,8.73989 v 65.71675 c 9.83174,-14.20782 26.238618,-23.48757 44.899284,-23.48757 h 1.822349 90.902687 1.82235 c 18.39315,0 34.59039,9.01824 44.46555,22.88203 v -65.11121 c 0,-4.84217 -3.89766,-8.73989 -8.73989,-8.73989 z"
+                    id="rect4510"
+                    inkscape:connector-curvature="0" />
+                    <path
+                    style="opacity:1;fill:none;fill-opacity:0.54871796;fill-rule:nonzero;stroke:#000000;stroke-width:8.08300018;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:403.79205322;stroke-opacity:1;paint-order:stroke fill markers"
+                    d="m 55.935337,160.00979 c -12.697129,0 -22.918613,5.96577 -22.918613,13.37598 v 16.49679 c 7.633671,-4.0499 16.349103,-6.34862 25.62535,-6.34862 h 1.822349 43.626207 v -10.14817 c 0,-7.41021 -10.2215,-13.37598 -22.918629,-13.37598 z"
+                    id="rect4516"
+                    inkscape:connector-curvature="0" />
+                    <path
+                    style="opacity:1;fill:none;fill-opacity:0.54871796;fill-rule:nonzero;stroke:#000000;stroke-width:8.08300018;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:403.79205322;stroke-opacity:1;paint-order:stroke fill markers"
+                    d="m 128.81185,160.00979 c -12.69713,0 -22.91862,5.96577 -22.91862,13.37598 v 10.14817 h 45.47388 1.82235 c 8.53533,0 16.60013,1.94308 23.78048,5.40787 v -15.55604 c 0,-7.41021 -10.22426,-13.37598 -22.92144,-13.37598 z"
+                    id="rect4518"
+                    inkscape:connector-curvature="0" />
+                     </g>
+                </svg>
+                    <span class="flex justify-between mt-3  text-black"> {{ listing.num_bedrooms }}</span> 
+            </div>
+                <span class="flex justify-between mt-2">
+                    <div class="flex justify-between absolute  px-8">
+                        <svg fill="#000000" height="45px" width="45px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+                        <g transform="translate(1 1)">
+                        <g>
+                            <g>
+                                <path d="M485.4,272.067h-8.533v-179.2c0-42.667-34.133-76.8-76.8-76.8c-37.77,0-64.935,28.006-67.974,69.041
+                                    c-19.829,3.748-34.426,20.826-34.426,41.892c0,5.12,3.413,8.533,8.533,8.533h68.267c5.12,0,8.533-3.413,8.533-8.533
+                                    c0-20.833-14.274-37.769-33.767-41.767c2.55-27.116,18.836-52.1,50.834-52.1c33.28,0,59.733,26.453,59.733,59.733v179.2H202.975
+                                    c-3.86-19.681-20.878-34.133-41.841-34.133c-8.533-10.24-20.48-17.067-34.133-17.067c-16.213,0-30.72,9.387-37.547,23.04
+                                    c-6.827-3.413-14.507-5.973-22.187-5.973c-20.963,0-37.981,14.452-41.841,34.133H24.6c-14.507,0-25.6,11.093-25.6,25.6
+                                    c0,14.507,11.093,25.6,25.6,25.6h10.255l23.025,91.307c6.827,26.453,30.72,45.227,58.027,45.227h6.827l-11.093,22.187
+                                    c-2.56,4.267-0.853,9.387,3.413,11.093c0.853,0.853,2.56,0.853,3.413,0.853c3.413,0,5.973-1.707,7.68-4.267L141.08,459.8h236.8
+                                    l14.507,29.013c1.707,3.413,4.267,5.12,7.68,5.12c1.707,0,2.56,0,3.413-1.707c3.413-1.707,5.12-6.827,3.413-11.093
+                                    l-10.689-21.379c26.419-0.938,49.266-19.39,55.916-44.328l23.24-92.16h10.04c14.507,0,25.6-11.093,25.6-25.6
+                                    C511,283.16,499.907,272.067,485.4,272.067z M365.08,118.467h-48.64c3.413-10.24,13.653-17.067,24.747-17.067
+                                    S361.667,108.227,365.08,118.467z M67.267,255c7.68,0,14.507,3.413,20.48,9.387c1.707,2.56,5.12,3.413,8.533,2.56
+                                    s5.12-3.413,5.973-6.827c2.56-12.8,12.8-22.187,25.6-22.187c9.387,0,17.92,4.267,22.187,12.8c1.707,3.413,5.973,5.12,9.387,4.267
+                                    c0.853,0,1.707,0,2.56,0c11.093,0,20.48,6.827,23.893,17.067H43.373C46.787,261.827,56.173,255,67.267,255z M436.76,410.307
+                                    c-5.12,18.773-22.187,32.427-41.813,32.427H116.76c-19.627,0-36.693-13.653-41.813-32.427l-22.187-87.04h404.48L436.76,410.307z
+                                    M485.4,306.2h-17.067H41.667H24.6c-5.12,0-8.533-3.413-8.533-8.533s3.413-8.533,8.533-8.533h8.533h162.133H485.4
+                                    c5.12,0,8.533,3.413,8.533,8.533S490.52,306.2,485.4,306.2z"/>
+                                <path d="M306.2,173.933c5.12,0,8.533-3.413,8.533-8.533v-4.267c0-5.12-3.413-8.533-8.533-8.533s-8.533,3.413-8.533,8.533v4.267
+                                    C297.667,170.52,301.08,173.933,306.2,173.933z"/>
+                                <path d="M306.2,213.187c5.12,0,8.533-4.267,8.533-8.533v-9.387c0-5.12-3.413-8.533-8.533-8.533s-8.533,3.413-8.533,8.533v9.387
+                                    C297.667,209.773,301.08,213.187,306.2,213.187z"/>
+                                <path d="M306.2,246.467c5.12,0,8.533-3.413,8.533-8.533v-4.267c0-5.12-3.413-8.533-8.533-8.533s-8.533,3.413-8.533,8.533v4.267
+                                    C297.667,243.053,301.08,246.467,306.2,246.467z"/>
+                                <path d="M340.333,173.933c5.12,0,8.533-3.413,8.533-8.533v-4.267c0-5.12-3.413-8.533-8.533-8.533
+                                    c-5.12,0-8.533,3.413-8.533,8.533v4.267C331.8,170.52,335.213,173.933,340.333,173.933z"/>
+                                <path d="M331.8,204.653c0,5.12,3.413,8.533,8.533,8.533c5.12,0,8.533-4.267,8.533-8.533v-9.387c0-5.12-3.413-8.533-8.533-8.533
+                                    c-5.12,0-8.533,3.413-8.533,8.533V204.653z"/>
+                                <path d="M331.8,237.933c0,5.12,3.413,8.533,8.533,8.533c5.12,0,8.533-3.413,8.533-8.533v-4.267c0-5.12-3.413-8.533-8.533-8.533
+                                    c-5.12,0-8.533,3.413-8.533,8.533V237.933z"/>
+                                <path d="M374.467,173.933c5.12,0,8.533-3.413,8.533-8.533v-4.267c0-5.12-3.413-8.533-8.533-8.533s-8.533,3.413-8.533,8.533v4.267
+                                    C365.933,170.52,369.347,173.933,374.467,173.933z"/>
+                                <path d="M365.933,204.653c0,5.12,3.413,8.533,8.533,8.533S383,208.92,383,204.653v-9.387c0-5.12-3.413-8.533-8.533-8.533
+                                    s-8.533,3.413-8.533,8.533V204.653z"/>
+                                <path d="M365.933,237.933c0,5.12,3.413,8.533,8.533,8.533s8.533-3.413,8.533-8.533v-4.267c0-5.12-3.413-8.533-8.533-8.533
+                                    s-8.533,3.413-8.533,8.533V237.933z"/>
+                            </g>
+                        </g>
+                        </g>
+                        </svg>
+                        <span class="flex justify-between py-3 text-black"> {{ listing.num_bathrooms }}</span></span>
+                    </div>
+                        <div class="flex justify-betwee px-20 py-2">
+                        <svg class="svg-icon" style="width: 1.4em; height: 1.4em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M1024 116.363636C1024 51.2 972.8 0 907.636364 0c-55.854545 0-102.4 41.890909-111.709091 93.090909H181.527273c-9.309091-27.927273-32.581818-46.545455-65.163637-46.545454C79.127273 46.545455 46.545455 79.127273 46.545455 116.363636c0 32.581818 18.618182 55.854545 46.545454 65.163637V791.272727c-51.2 9.309091-93.090909 55.854545-93.090909 111.709091C0 972.8 51.2 1024 116.363636 1024c55.854545 0 102.4-41.890909 111.709091-93.090909h567.854546c13.963636 27.927273 46.545455 46.545455 79.127272 46.545454 51.2 0 93.090909-41.890909 93.09091-93.090909 0-32.581818-18.618182-65.163636-46.545455-79.127272V228.072727c60.509091-9.309091 102.4-55.854545 102.4-111.709091zM139.636364 795.927273v-18.618182L772.654545 139.636364h18.618182c4.654545 27.927273 23.272727 51.2 41.890909 69.818181L209.454545 837.818182c-18.618182-23.272727-41.890909-37.236364-69.818181-41.890909zM181.527273 139.636364h130.327272L139.636364 311.854545V181.527273c18.618182-4.654545 37.236364-23.272727 41.890909-41.890909zM139.636364 512V377.018182L377.018182 139.636364H512l-372.363636 372.363636z m437.527272-372.363636h130.327273L139.636364 707.490909v-130.327273L577.163636 139.636364zM228.072727 884.363636l651.636364-656.290909h4.654545v125.672728L358.4 884.363636H228.072727z m195.490909 0L884.363636 423.563636v130.327273L553.890909 884.363636H423.563636z m367.709091 0h-172.218182l265.309091-265.309091V791.272727c-51.2 0-93.090909 41.890909-93.090909 93.090909z" fill="" />
+                        </svg>
+                        <span class="flex justify-between py-1 text-black"> {{ listing.square_footage }}"ha</span>
+                        </div>   
+    </div>
+        <!--Staff user-->
+    {% if request.user.is_staff %}
+        <div class="mt-10 py-5 border-t border-gray-200">
+            <a href="/listings/{{ listing.id }}/edit/" class="text-blue-500">Edit</a>
+            <a href="/listings/{{ listing.id }}/delete/" class="ml-3 text-blue-500">Delete</a>
+        </div>
+    {% endif %}
+    </div>
+
+{% endblock %}
