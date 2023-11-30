@@ -37,14 +37,8 @@ realtor list their properties\
 
 ---
 ## Screenshots
-<<<<<<< HEAD
-![Property-Listing](screenshots/listing1.jpg)
-![Property-Listing](screenshots/listing2.jpg)
-![Property-Listing](screenshots/updatelisting.jpg)
-![Property-Listing](screenshots/viewdetails.jpg)
-=======
 ![Property-Listing1](screenshots/listing1.jpg)\
 ![Property-Listing2](screenshots/listing2.jpg)\
 ![Update-Listing](screenshots/updatelisting.jpg)\
 ![Property-View Details](screenshots/viewdetails.jpg)
->>>>>>> refs/remotes/origin/main
+
