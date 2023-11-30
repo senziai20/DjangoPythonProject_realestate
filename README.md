@@ -38,11 +38,11 @@ realtor list their properties\
 ---
 ## Screenshots
 ![Property-Listing1](
-DjangoPythonProject_realestate/real_estate/screenshots/listing1.jpg)\
+https://github.com/senziai20/DjangoPythonProject_realestate/tree/main/real_estate/screenshots/listing1.jpg)\
 ![Property-Listing2](
-DjangoPythonProject_realestate/real_estate/screenshots/listing2.jpg)\
+https://github.com/senziai20/DjangoPythonProject_realestate/tree/main/real_estate/screenshots/listing2.jpg)\
 ![Update-Listing](
-DjangoPythonProject_realestate/real_estate/screenshots/updatelisting.jpg)\
+https://github.com/senziai20/DjangoPythonProject_realestate/tree/main/real_estate/screenshots/updatelisting.jpg)\
 ![Property-View Details](
-DjangoPythonProject_realestate/real_estate/screenshots/viewdetails.jpg)
+https://github.com/senziai20/DjangoPythonProject_realestate/tree/main/real_estate/screenshots/viewdetails.jpg)
 
