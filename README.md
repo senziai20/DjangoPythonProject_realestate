@@ -37,7 +37,7 @@ realtor list their properties\
 
 ---
 ## Screenshots
-![Property-Listing](screenshots/listing1.jpg)\
+![Property-Listing1](screenshots/listing1.jpg)\
 ![Property-Listing2](screenshots/listing2.jpg)\
 ![Update-Listing](screenshots/updatelisting.jpg)\
 ![Property-View Details](screenshots/viewdetails.jpg)
