@@ -38,11 +38,11 @@ realtor list their properties\
 ---
 ## Screenshots
 ![Property-Listing1](
-DjangoPythonProject_realestate/django_project_realestate/real_estate/screenshots/listing1.jpg)\
+DjangoPythonProject_realestate/real_estate/screenshots/listing1.jpg)\
 ![Property-Listing2](
-DjangoPythonProject_realestate/django_project_realestate/real_estate/screenshots/listing2.jpg)\
+DjangoPythonProject_realestate/real_estate/screenshots/listing2.jpg)\
 ![Update-Listing](
-DjangoPythonProject_realestate/django_project_realestate/real_estate/screenshots/updatelisting.jpg)\
+DjangoPythonProject_realestate/real_estate/screenshots/updatelisting.jpg)\
 ![Property-View Details](
-DjangoPythonProject_realestate/django_project_realestate/real_estate/screenshots/viewdetails.jpg)
+DjangoPythonProject_realestate/real_estate/screenshots/viewdetails.jpg)
 
